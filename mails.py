@@ -1,4 +1,5 @@
 """module to automatically send email"""
+import os
 import smtplib
 
 import requests
@@ -6,8 +7,8 @@ from cs50 import SQL
 
 from credentials import get_login, get_password
 
-PASSWORD = get_password()
-LOGIN = get_login()
+PASSWORD = os.environ.get("PASSWORD")
+LOGIN = os.environ.get("LOGIN")
 
 
 def send_email(send_to: str, message: str) -> None:

@@ -1,5 +1,6 @@
 """ Flask built Website that provides users with random facts"""
 import atexit
+import os
 import re
 from functools import wraps
 
