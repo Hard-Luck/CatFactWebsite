@@ -5,3 +5,4 @@ requests==2.27.1
 Werkzeug==2.0.3
 gunicorn
 psycopg2
+flask_session
